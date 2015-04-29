@@ -21,7 +21,7 @@
 
 from openerp.osv import fields, osv
 import openerp.addons.decimal_precision as dp
-from tools.amount_to_text_en import amount_to_text
+from openerp.tools.amount_to_text_en import amount_to_text
 
 class account_invoice_line(osv.osv):
     _inherit = "account.invoice.line"
