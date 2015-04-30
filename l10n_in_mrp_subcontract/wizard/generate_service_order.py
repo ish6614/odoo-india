@@ -19,7 +19,7 @@
 #
 ##############################################################################
 import time
-import netsvc
+import openerp.netsvc
 
 from openerp.osv import osv
 import openerp.addons.decimal_precision as dp
