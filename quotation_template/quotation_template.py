@@ -30,8 +30,8 @@ class sale_order(osv.Model):
     _inherit = 'sale.order'
 
     _columns = {
-        'is_template': fields.boolean('Template', readonly=True, states={'draft': [('readonly', False)]),
-        'template_id': fields.many2one('sale.order', 'Offer', domain=[('is_template', '=', True)], readonly=True, states={'draft': [('readonly', False)]),
+        'is_template': fields.boolean('Template', readonly=True, states={'draft': [('readonly', False)]}),
+        'template_id': fields.many2one('sale.order', 'Offer', domain=[('is_template', '=', True)], readonly=True, states={'draft': [('readonly', False)]}),
     }
 
     def onchange_template(self, cr, uid, ids, template=False, partner_id=False, pricelist_id=False, fiscal_position=False):

@@ -22,9 +22,9 @@
 ##############################################################################
 
 import time
-from report import report_sxw
+from openerp.report import report_sxw
 from operator import itemgetter 
-import pooler
+import openerp.pooler
 
 class export_print(report_sxw.rml_parse):
     def __init__(self, cr, uid, name, context):

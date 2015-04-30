@@ -18,7 +18,7 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ##############################################################################
-import netsvc
+import openerp.netsvc
 
 from openerp.osv import fields, osv, orm
 import openerp.addons.decimal_precision as dp
